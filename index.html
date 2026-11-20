@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AppsFactory42 — Fonds d'écran animés</title>
+<meta name="description" content="AppsFactory42 conçoit des fonds d'écran animés interactifs pour Android : aquariums, eau réactive, compagnons et décors lumineux.">
+<style>
+  :root{
+    --bg:#0e1116; --panel:#161b23; --fg:#eef2f7; --muted:#9aa7b6;
+    --accent:#4ea1ff; --accent2:#7bd7c4; --border:#232b36; --radius:16px;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f8fb; --panel:#ffffff; --fg:#101620; --muted:#5b6673; --border:#e4e9f0; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:860px;margin:0 auto;padding:0 20px}
+  header{padding:72px 0 40px;text-align:center}
+  .logo{display:inline-flex;align-items:center;gap:12px;font-weight:700;font-size:20px;letter-spacing:.3px}
+  .logo .mark{width:40px;height:40px;border-radius:12px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#06121f;font-weight:800}
+  h1{font-size:clamp(28px,5vw,44px);line-height:1.15;margin:28px 0 14px}
+  .lead{color:var(--muted);font-size:18px;max-width:620px;margin:0 auto}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:40px 0}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:22px}
+  .card h3{margin:0 0 6px;font-size:17px}
+  .card p{margin:0;color:var(--muted);font-size:15px}
+  .section{background:var(--panel);border:1px solid var(--border);border-radius:var(--radius);padding:28px;margin:28px 0}
+  .section h2{margin:0 0 10px;font-size:22px}
+  .section p{color:var(--muted);margin:0 0 10px}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .pill{display:inline-block;background:color-mix(in srgb,var(--accent) 16%,transparent);
+    color:var(--accent);border-radius:999px;padding:5px 14px;font-size:13px;font-weight:600}
+  footer{border-top:1px solid var(--border);margin-top:48px;padding:28px 0 60px;color:var(--muted);font-size:14px;text-align:center}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo"><span class="mark">A42</span> AppsFactory42</div>
+      <h1>Des fonds d'écran animés qui réagissent à vous.</h1>
+      <p class="lead">AppsFactory42 est un studio indépendant qui conçoit des fonds d'écran interactifs
+      pour Android : aquariums à nourrir, eau qui ondule au toucher, petits compagnons et décors lumineux.</p>
+      <p style="margin-top:18px"><span class="pill">En développement et en test</span></p>
+    </header>
+
+    <div class="grid">
+      <div class="card"><h3>Vivants</h3><p>Des scènes animées en temps réel, pensées pour rester lisibles derrière vos icônes.</p></div>
+      <div class="card"><h3>Interactifs</h3><p>Le toucher, la batterie et le mouvement du téléphone influent sur le rendu.</p></div>
+      <div class="card"><h3>Respectueux</h3><p>Aucune donnée personnelle collectée, aucun accès Internet requis.</p></div>
+    </div>
+
+    <div class="section">
+      <h2>À propos</h2>
+      <p>AppsFactory42 est édité par Yoann Mordacq, entrepreneur individuel immatriculé en France
+      (SIREN 510 278 518), établi à Strasbourg. Le studio développe et teste une collection de fonds
+      d'écran animés destinés à Google&nbsp;Play.</p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Pour toute question, écrivez à
+      <a href="mailto:appsfactory42@gmail.com">appsfactory42@gmail.com</a>.</p>
+      <p>Politique de confidentialité : <a href="privacy.html">lire ici</a>.</p>
+    </div>
+
+    <footer>
+      © 2026 AppsFactory42 — Yoann Mordacq · Strasbourg, France ·
+      <a href="privacy.html">Confidentialité</a>
+    </footer>
+  </div>
+</body>
+</html>
